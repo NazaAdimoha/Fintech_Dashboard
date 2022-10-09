@@ -1,0 +1,69 @@
+.login--container {
+  background-color: #213F7D;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.login--container .pablo--container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.login--container .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.2rem;
+  padding-top: 6rem;
+  padding-left: 7rem;
+}
+.login--container .pablo {
+  margin-top: 5.3rem;
+}
+.login--container .form--container {
+  width: 50%;
+  padding-left: 6.25rem;
+  padding-right: 9.4rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 11.9rem;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+.login--container .welcome {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #213F7D;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.login--container .details {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #213F7D;
+  margin-top: -0.7rem;
+  opacity: 0.6;
+}
+.login--container .auth--input {
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  border-radius: 0.4rem;
+  width: 100%;
+  padding: 2px 10px;
+  height: 40px;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 2rem;
+}
+.login--container .auth--input input:focus {
+  border: none;
+}
+.login--container .forgot--password {
+  color: #39CDCC;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+.login--container .auth--button {
+  width: calc(100% + 1.5rem);
+  background-color: #39CDCC;
+  border: none;
+  font-size: 1rem;
+}/*# sourceMappingURL=authLayout.css.map */
