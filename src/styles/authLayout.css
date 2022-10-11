@@ -1,14 +1,15 @@
 .login--container {
-  background-color: #213F7D;
+  background-color: #fff;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
 .login--container .pablo--container {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 .login--container .logo {
   width: -webkit-fit-content;
@@ -22,7 +23,7 @@
   margin-top: 5.3rem;
 }
 .login--container .form--container {
-  width: 50%;
+  width: 40%;
   padding-left: 6.25rem;
   padding-right: 9.4rem;
   display: flex;
@@ -55,6 +56,34 @@
 .login--container .auth--input input:focus {
   border: none;
 }
+.login--container .toggle--visibility {
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.login--container .toggle--visibility .auth--password {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+}
+.login--container .auth--password input:focus {
+  border: none;
+}
+.login--container .toggle--button {
+  border: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  font-size: small;
+  cursor: pointer;
+}
 .login--container .forgot--password {
   color: #39CDCC;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -63,7 +92,15 @@
 }
 .login--container .auth--button {
   width: calc(100% + 1.5rem);
+  height: 2.5rem;
   background-color: #39CDCC;
   border: none;
+  border-radius: 5px;
   font-size: 1rem;
+  color: #fff;
+}
+.login--container .auth--button:hover {
+  background-color: #f2f2f2;
+  color: #545F7D;
+  border: 1px solid #39CDCC;
 }/*# sourceMappingURL=authLayout.css.map */

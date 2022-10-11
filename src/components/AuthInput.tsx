@@ -6,6 +6,7 @@ interface InputProps {
   placeholder: string;
   type: string;
   name?: string;
+ 
   className?: string
 
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
@@ -17,9 +18,11 @@ const AuthInput = ({
   placeholder,
   type,
   name,
+
   onBlur,
   className
 }: InputProps) => {
+
   return (
     <input
       value={value}
@@ -27,6 +30,7 @@ const AuthInput = ({
       placeholder={placeholder}
       type={type}
       name={name}
+      
       onBlur={onBlur}
       className={className}
     />

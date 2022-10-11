@@ -1,16 +1,17 @@
 @import"./Variables/Variables.scss";
 
 .login--container {
-    background-color: $auth-header-text-color;
+    background-color: $white-color;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
 
 .pablo--container {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
+    background-color: $white-color;
 }  
 
 .logo {
@@ -25,7 +26,7 @@
 }
 
 .form--container {
-    width: 50%;
+    width: 40%;
     padding-left: 6.25rem;
     padding-right: 9.4rem;
     display: flex;
@@ -64,6 +65,40 @@
     border: none;
 }
 
+.toggle--visibility {
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 0.4rem;
+    width: 100%;
+    height: 40px;
+    // padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+ .toggle--visibility .auth--password {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.auth--password input:focus {
+    border: none;
+}
+
+.toggle--button {
+    border: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    font-size: small;
+    cursor: pointer;
+}
+
 .forgot--password {
     color: $light-green-color;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -73,9 +108,19 @@
 
 .auth--button {
     width: calc(100% + 1.5rem);
+    height: 2.5rem;
     background-color: $light-green-color;
     border: none;
+    border-radius: 5px;
     font-size: 1rem;
+    color: $white-color;
+
+}
+
+.auth--button:hover {
+    background-color: $gray-color;
+    color: $auth-header-sub-text-color;
+    border: 1px solid $light-green-color;
 }
 
     

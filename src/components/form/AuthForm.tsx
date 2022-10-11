@@ -6,6 +6,7 @@ import AuthInput from "../AuthInput";
 const AuthForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false)
 
   const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value.trim());
@@ -16,6 +17,12 @@ const AuthForm = () => {
     setPassword(e.target.value.trim());
     console.log(e.target.value);
   };
+
+  const togglePassword = () => {
+    
+      showPassword ? setShowPassword(false) : setShowPassword(true);
+    
+  }
   return (
     <div>
       <h1 className="welcome">Welcome!</h1>
@@ -31,20 +38,23 @@ const AuthForm = () => {
             className="auth--input"
           />
         </div>
-        <div>
+        <div className="toggle--visibility">
           <AuthInput
             value={password}
             onChange={handlePasswordChange}
             placeholder="Password"
-            type="password"
-            className="auth--input"
+            type={showPassword ? 'text' : 'password'}
+            className="auth--password"
           />
+          <div className="toggle--button" onClick={togglePassword}>
+            {showPassword ? "Hide" : "Show"}
+          </div>
         </div>
 
         <p className="forgot--password">FORGOT PASSWORD?</p>
 
         <AuthButton
-          className="auth-button"
+          className="auth--button"
           text={"LOG IN"}
         />
       </form>
